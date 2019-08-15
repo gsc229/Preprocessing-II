@@ -1,1 +1,31 @@
 // Navigation Styles here
+.top-header {
+  // .custom-flex(@d, @space-between, @center);
+  @media @mobile {
+    .custom-flex(column, center, center);
+    width: 100%;
+    nav {
+      a {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .custom-flex(row, space-around, center);
+  border-bottom: 2px dashed darkgray;
+  height: 8vh;
+  width: 100%;
+
+  nav {
+    height: 50px;
+
+    width: 400px;
+    .custom-flex(row, space-around, center);
+    .font-styles(2rem, @roboto);
+    a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}

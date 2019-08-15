@@ -1,1 +1,30 @@
 // Mixins in here
+.opacity (@opacity: 0.5) {
+  -webkit-opacity: @opacity;
+  -moz-opacity: @opacity;
+  opacity: @opacity;
+}
+
+.custom-flex(@d:row, @j, @a) {
+  display: flex;
+  flex-direction: @d;
+  justify-content: @j;
+  align-items: @a;
+}
+
+/* custom button */
+.custom-btn(@bgcolor:#FFBF27, @width:200px, @font-color:#000) {
+  display: block;
+  background-color: @bgcolor;
+  // margin: 0 10px 20px;
+  cursor: pointer;
+  width: @width;
+  height: 45px;
+  border-radius: 10px;
+  color: @font-color;
+
+  &:hover {
+    background-color: @font-color;
+    color: @bgcolor;
+  }
+}
